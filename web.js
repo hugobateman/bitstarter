@@ -3,9 +3,8 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-var index = fs.readFileSync(~/HW3/index.html);
-var buffer = new Buffer(index);
-var string = buffer.toString(String);
+var index = fs.readFileSync(~/HW3/bitstarter/index.html);
+var string = index.toString(String);
 
 app.get('/', function(request, response) {
   response.send(string);
