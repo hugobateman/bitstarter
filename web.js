@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 
-var index = fs.readFileSync(~/HW3/bitstarter/index.html);
+var index = fs.readFileSync('index.html');
 var string = index.toString(String);
 
 app.get('/', function(request, response) {
