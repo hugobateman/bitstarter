@@ -1,0 +1,4 @@
+var fs = require('fs');
+var buffer = fs.readFileSync(~/HW3/bitstarter/index.html);
+
+console.log(buffer.toString());
